@@ -1,0 +1,80 @@
+/* ===== Background Image for Body ===== */
+body {
+    background-image:url("/static/fields2.jpg"); /* Make sure your bg.jpg is in static folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: greenyellow;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+/* ===== Overlay for readability ===== */
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ===== Heading Style ===== */
+h1 {
+    color: yellow; /* Green */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* ===== Form Box Styling ===== */
+form {
+    background: rgba(241, 134, 28, 0.582);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+
+/* ===== Choose File Button ===== */
+input[type="file"] {
+    background-color: #ccceff; /* Light pink */
+    color: #333;
+    padding: 10px;
+    border: 1px solid #1a28c1;
+    border-radius: 8px;
+    margin: 10px 0;
+    
+}
+
+/* ===== Predict Button ===== */
+button {
+    background-color: #ffe6ccce; /* Light pink */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* ===== Hover Effect for Button ===== */
+button:hover {
+    background-color: #3399ff; /* Blue on hover */
+    color: #ffffff;
+}
+
+/* ===== Uploaded Image Styling ===== */
+img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+a{
+    color: rgb(0, 195, 255);
+}

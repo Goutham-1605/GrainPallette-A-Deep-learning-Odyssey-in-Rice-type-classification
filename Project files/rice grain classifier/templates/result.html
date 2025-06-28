@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p><strong>Predicted Rice Type:</strong>{{ rice_type }}</p>
+    <img src="{{ image_path }}" alt="Uploaded Image" width="300px">
+    <br><br>
+    <a href="/">Try another image</a>
+</body>
+</html>
